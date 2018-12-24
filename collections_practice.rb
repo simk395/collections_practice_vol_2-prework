@@ -60,7 +60,7 @@ def merge_data(keys,data)
   keys.each do |item|
     i << item
     j = i[-1][:first_name]
-    l = data[j]
+    return data[j]
   end#one
   l
 end
