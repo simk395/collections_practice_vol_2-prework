@@ -38,11 +38,11 @@ end
 def count_elements(array)
   i, a = 0, []
   array.each do |item|
-    if a.include?(item) == false
-      a << item
-      a[-1][:count] = 0
-    else
+    if a.include?(item)
       a[-1][:count] += 1
+    else
+      a << item
+      a[-1][:count] = 1
     end
   end
   a
