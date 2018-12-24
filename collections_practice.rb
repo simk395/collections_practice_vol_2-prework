@@ -38,15 +38,21 @@ end
 def count_elements(array)
   i, a = 0, []
   array.each do |item|
-    if a.include?(item)
-      a[-1][:count] += 1
-    else
+    if a.include?(item) == false
       a << item
-      a[-1][:count] = 1
     end
+    j.each do |data|
+      if data == item
+        i += 1
+      end
+    end
+  a[-1][:count] = i
+  array.delete(item)
+  j.delete(item)
+  i = 0
   end
-  a
 end
+
 
 def find_cool(array)
   array.each do |item|
