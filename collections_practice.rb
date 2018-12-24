@@ -56,13 +56,11 @@ end
 
 def merge_data(one,two)
   i = []
+  j = ""
   one.each do |item|
     i << item
-    two.each do |data|
-      if item.values == data.key
-        i[-1] << data.value
-      end#if
-    end#two
+    j = i[-1][:first_name]
+    i[-1] << two[j]
   end#one
 end
 
