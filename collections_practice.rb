@@ -62,6 +62,7 @@ def merge_data(keys,data)
     j = i[-1][:first_name]
     i[-1] << data[j]
   end#one
+  i
 end
 
 def find_cool(array)
