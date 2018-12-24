@@ -54,6 +54,17 @@ def count_elements(array)
   a
 end
 
+def merge_data(one,two)
+  i = []
+  one.each do |item|
+    i << item
+    two.each do |data|
+      if item.value == data.key
+        i[-1] << data.value
+      end#if
+    end#two
+  end#one
+end
 
 def find_cool(array)
   array.each do |item|
