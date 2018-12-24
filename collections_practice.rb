@@ -51,6 +51,7 @@ def count_elements(array)
   j.delete(item)
   i = 0
   end
+  a
 end
 
 
