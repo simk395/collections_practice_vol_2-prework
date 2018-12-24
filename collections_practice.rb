@@ -43,6 +43,7 @@ def count_elements(array)
       a[-1][:count] = 0
     else
       a[-1][:count] += 1
+    end
   end
   a
 end
