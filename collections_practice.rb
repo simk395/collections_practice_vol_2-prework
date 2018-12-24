@@ -55,12 +55,12 @@ def count_elements(array)
 end
 
 def merge_data(keys,data)
-  i = []
-  j = ""
+  i, j, l = 0, "" , []
   keys.each do |item|
-    i << item
-    j = i[-1][:first_name]
-    return data[0][j]
+    l << item
+    j = l[-1][:first_name]
+    l[-1] << data[i][j]
+    i += 1
   end#one
   l
 end
