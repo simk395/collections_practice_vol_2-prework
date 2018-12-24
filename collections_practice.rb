@@ -59,7 +59,7 @@ def merge_data(one,two)
   one.each do |item|
     i << item
     two.each do |data|
-      if item.value == data.key
+      if item.values == data.key
         i[-1] << data.value
       end#if
     end#two
