@@ -59,8 +59,9 @@ def merge_data(keys,data)
   j = ""
   keys.each do |item|
     i << item
+    j = i[-1][:first_name]
   end#one
-  i
+  j
 end
 
 def find_cool(array)
