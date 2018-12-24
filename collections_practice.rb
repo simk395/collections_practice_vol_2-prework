@@ -59,7 +59,7 @@ def merge_data(keys,data)
   keys.each do |item|
     l << item
     j = l[-1][:first_name]
-    l[-1] << data[i][j]
+    l[-1].merge(data[i][j])
     i += 1
   end#one
   l
